@@ -1,0 +1,6 @@
+{
+  "name": "Chrono Butterfly - Visual Novel Interface",
+  "description": "An interactive visual novel interface featuring a retro pixel window frame, cinematic 3D rendered scenes, typewriter dialogue, and character Butterfly.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
