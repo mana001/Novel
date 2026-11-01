@@ -18,7 +18,7 @@ jobs:
       - name: Extract ZIP without outer folder
         run: |
           mkdir -p extracted
-          unzip archive.zip -d extracted
+          unzip Cin-novel.zip -d extracted
           find extracted -mindepth 1 -maxdepth 1 -type d -exec sh -c '
             for dir do
               if [ "$(find "$dir" -mindepth 1 -maxdepth 1 | wc -l)" -gt 0 ]; then
@@ -31,7 +31,7 @@ jobs:
       - name: Move files to repository root
         run: |
           cp -r extracted/. .
-          rm -rf extracted archive.zip
+          rm -rf extracted Cin-novel.zip
 
       - name: Commit changes
         run: |
